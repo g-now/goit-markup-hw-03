@@ -1,6 +1,14 @@
+/*Deklaracja zmiennych*/
+:root {
+    --dark1: #212121;
+    --dark2: #2F303A;
+    --blue: #2196F3;
+    --white: #FFFFFF;
+}
+
 .body {
     font-family: "Roboto", sans-serif;
-    color: #212121;
+    color: var(--dark1);
     margin: 0px;
 }
 
@@ -10,25 +18,25 @@
 }
 
 .menu-nav {
-    color: #212121;
+    color: var(--dark1);
     list-style-type: none;
 }
 
 .link {
-    color: #212121;
+    color: var(--dark1);
     text-decoration: none;
 }
 
 .link:hover {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .link:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .web {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .filters {
@@ -46,8 +54,8 @@
 }
 
 .button:active {
-    color: #FFFFFF;
-    background-color: #2196F3;
+    color: var(--white);
+    background-color: var(--blue);
 }
 
 .button-portfolio {
@@ -61,41 +69,41 @@
 }
 
 .button-portfolio:active {
-    color: #FFFFFF;
-    background-color: #2196F3;  
+    color: var(--white);
+    background-color: var(--blue);  
 }
 
 .logo {
-    background-color: #2F303A;
-    color: #FFFFFF;
+    background-color: var(--dark2);
+    color: var(--white);
     text-align: center;
     padding-top: 200px;
     padding-bottom: 200px;
 }
 
 .footer {
-    color: #FFFFFF;
-    background-color: #2F303A;
+    color: var(--white);
+    background-color: var(--dark2);
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 215px;
 }
 
 .web-studio-footer {
-    color: #FFFFFF;
+    color: var(--white);
     font-family: "Raleway";
     font-size: 26px;
 }
 
 .footer-link {
-    color: #FFFFFF;
+    color: var(--white);
     text-decoration: none;
 }
 
 .footer-link:hover {
-    color: #2196F3;
+    color: var(--blue);
 }
 
 .footer-link:focus {
-    color: #2196F3;
+    color: var(--blue);
 }
