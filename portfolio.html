@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/modern-normalize.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +13,8 @@
 </head>
 <body class="body">
     <!--HEADER-->
-    <header class="header">
-      <!--MENU-->
-      <div class="menu">
-        <nav>
+    <header class="menu">
+        <nav class="navigation">
           <p class="web-studio"><span class="web">Web</span>Studio</p>
           <ul class="menu-nav">
             <li><a class="link" href="agencja.html">Agencja</a></li>
@@ -23,13 +22,11 @@
             <li><a class="link" href="kontakt.html">Kontakt</a></li>
           </ul>
         </nav>
-        <a class="link" href="mailto:info@devstudio.com">info@devstudio.com</a>
-        <a class="link" href="tel:+48111111111">+48 111 111 111</a>
-      </div>
+        <a class="link-nav" href="mailto:info@devstudio.com">info@devstudio.com</a>
+        <a class="link-nav" href="tel:+48111111111">+48 111 111 111</a>
     </header>
     <!--MAIN-->
-    <main>
-      <div>
+    <main class="portfolio-main">
         <ul class="filters">
           <li><button class="button-portfolio" type="button">Wszystkie</button></li>
           <li><button class="button-portfolio" type="button">Strony</button></li>
@@ -37,9 +34,8 @@
           <li><button class="button-portfolio" type="button">Dizajn</button></li>
           <li><button class="button-portfolio" type="button">Marketing</button></li>
         </ul>
-      </div>
-      <div>
-          <figure>
+      <div class="portfolio-products">
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio1.jpg"
                 alt="our people make the difference banner"
@@ -50,9 +46,7 @@
                 <span class="portfolio-item-description">Strona internetowa</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio2.jpg"
                 alt="volleyball banner"
@@ -63,22 +57,18 @@
                 <span class="portfolio-item-description">Dizajn</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio3.jpg"
                 alt="the seafood restaurant banner"
                 width=370
                 height=294>
               <figcaption class="portfolio-item">
-                Restauracja seafood <br>
+                Restauracja Seafood <br>
                 <span class="portfolio-item-description">Aplikacja</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio4.jpg"
                 alt="earphones banner"
@@ -89,9 +79,7 @@
                 <span class="portfolio-item-description">Marketing</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio5.jpg"
                 alt="boxes banner"
@@ -102,9 +90,7 @@
                 <span class="portfolio-item-description">Aplikacja</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio6.jpg"
                 alt="mac screen banner"
@@ -115,9 +101,7 @@
                 <span class="portfolio-item-description">Strona internetowa</span>
               </figcaption>
           </figure>
-      </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio7.jpg"
                 alt="magazine banner"
@@ -128,8 +112,7 @@
                 <span class="portfolio-item-description">Dizajn</span>
               </figcaption>
           </figure>
-      </div>
-      <div><figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio8.jpg"
                 alt="label tag banner"
@@ -140,9 +123,7 @@
                 <span class="portfolio-item-description">Marketing</span>
               </figcaption>
           </figure>
-        </div>
-      <div>
-          <figure>
+          <figure class="portfolio-figure">
               <img
                 src="images/portfolio9.jpg"
                 alt="netbook banner"
