@@ -1,3 +1,7 @@
+ul {
+    list-style-type: none;
+}
+
 /*Deklaracja zmiennych*/
 :root {
     --dark1: #212121;
@@ -12,7 +16,15 @@
 .body {
     font-family: "Roboto", sans-serif;
     color: var(--dark1);
-    width: 1600px;
+}
+
+.container {
+    width: 100%;
+}
+
+.container-navigation {
+    border: 1px solid #ECECEC;
+    box-sizing: border-box;
 }
 
 /*NAWIGACJA*/
@@ -21,9 +33,7 @@
     height: 80px;
     display: flex;
     align-items: center;
-    margin: 0px;
-    padding-left: 215px;
-    border: 1px solid #ECECEC;
+    justify-content: center;
 }
 
 .navigation {
@@ -43,10 +53,6 @@
     list-style-type: none;
     display: flex;
     padding: 0px;
-}
-
-.menu-nav:nth-last-child(1) {
-    margin-right: 323px;
 }
 
 .link {
@@ -72,7 +78,14 @@
     line-height: 1.14;
     color: var(--grey);
     text-decoration: none;
-    margin: 0px 25px 0px 25px;
+}
+
+.link-nav-marg1 {
+    margin: 0px 25px 0px 341px;
+}
+
+.link-nav-marg2 {
+    margin: 0px 0px 0px 25px;
 }
 
 .link-nav:hover {
@@ -88,15 +101,12 @@
     line-height: 1.19;
 }
 
-.filters {
-    list-style-type: none;
-}
-
 /*SEKCJA 1 - INDEX*/
 
 .logo {
     background-color: var(--dark2);
     text-align: center;
+    margin: auto;
     padding-top: 200px;
     padding-bottom: 200px;
     height: 200px;
@@ -107,17 +117,14 @@
     font-size: 44px;
     font-weight: 900;
     letter-spacing: 0.06em;
-    width: 696px;
-    margin: 0px 0px 30px 0px;
+    margin: 0px auto 30px auto;
     line-height: 1.36;
-    padding: 0px 452px 0px 452px;
+    width: 696px;
 }
 
 .button {
     width: 200px;
     height: 50px;
-    left: 700px;
-    top: 430px;
     font-size: 16px;
     text-align: center;
     line-height: 1.87;
@@ -125,7 +132,7 @@
     cursor: pointer;
     border: none;
     border-radius: 4px;
-    padding: 0px;   
+    padding: 0px; 
 }
 
 .button:active {
@@ -140,15 +147,10 @@
 
 /*PORFOLIO*/
 
-.portfolio-main {
-    margin: 0px 0px 0px 200px;
-}
-
 .filters {
     display: flex;
     justify-content: center;
-    margin: 90px 0px 50px 0px;
-    width: 1208px;
+    margin: 90px auto 50px auto;
 }
 
 .button-portfolio {
@@ -180,8 +182,7 @@
     display: flex;
     flex-flow: wrap;
     justify-content: center;
-    margin: 0px 0px 64px 0px;
-    width: 1208px;
+    margin: 0px auto 64px auto;
 }
 
 .portfolio-figure   {
@@ -208,7 +209,11 @@
 
 .lorem-container {
     display: flex;
-    margin: 0px 200px 0px 200px;
+    justify-content: center;
+}
+
+.lorem-box {
+    width: 300px;
 }
 
 .lorem-bold {
@@ -216,6 +221,7 @@
     font-weight: bold;
     line-height: 1.14;
     margin: 94px 15px 10px 15px;
+    box-sizing: content-box;
 }
 
 .lorem {
@@ -223,9 +229,14 @@
     color: var(--grey);
     line-height: 1.71;
     margin: 0px 15px 94px 15px;
+    box-sizing: content-box;
 }
 
 /*SEKCJA 3 - INDEX*/
+
+.what-we-do {
+    margin: 0px auto 94px auto;
+}
 
 .header2 {
     color: var(--dark1);
@@ -234,10 +245,6 @@
     text-align: center;
     line-height: 1.17;
     margin: 0px 0px 50px 0px;
-}
-
-.what-we-do {
-    padding: 0px 0px 94px 0px;
 }
 
 .what-we-do-container {
@@ -259,10 +266,6 @@
 .team {
     display: flex;
     justify-content: center;
-}
-
-.picture {
-    display: block;
 }
 
 .team-card {
@@ -295,7 +298,7 @@
     font-size: 14px;
     padding-top: 60px;
     padding-bottom: 60px;
-    padding-left: 215px;
+    padding-left: calc((100% - 1170px) / 2);
 }
 
 .web-studio-footer {
